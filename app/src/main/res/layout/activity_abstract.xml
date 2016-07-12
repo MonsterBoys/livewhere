@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xu.hasee.livewhere.home.AbstractActivity">
+    <TextView
+        android:id="@+id/abstract_title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#20D485"
+        android:paddingLeft="150dp"
+        android:paddingTop="18dp"
+        android:text="关键词"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/abstract_back"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/back" />
+    <EditText
+        android:id="@+id/abstract_edt"
+        android:layout_alignBottom="@id/abstract_title"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="25dp"
+        android:hint="酒店名称"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/seach_frame"
+        android:layout_width="match_parent"
+        android:layout_height="36dp" />
+    <ImageView
+        android:src="@drawable/seach_left"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="14dp"
+        android:layout_width="18dp"
+        android:layout_height="18dp" />
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xu.hasee.livewhere.myinfo.FeedbackActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/feedback_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#20D485"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/feedback_back"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@null"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="意见反馈"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/feedback_content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedback_toolBar"
+        android:background="#fff">
+
+        <EditText
+            android:id="@+id/feedback_content"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_border"
+            android:padding="3dp"
+            android:gravity="top"
+            android:hint="您的反馈和意见，将是我们进步的动力！"
+            android:inputType="textMultiLine"
+            android:maxLength="200"
+            android:maxLines="10"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:textCursorDrawable="@drawable/color_cursor"
+
+        android:id="@+id/feedback_phonenum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedback_content_rl"
+        android:background="@null"
+        android:hint="可以联系到您的手机号码"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="20dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:textCursorDrawable="@drawable/color_cursor"
+
+        android:id="@+id/feedback_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedback_phonenum"
+        android:background="@null"
+        android:hint="请输入验证码"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="20dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:id="@+id/feedback_codenum_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/feedback_code"
+        android:layout_below="@id/feedback_phonenum"
+        android:background="#20D485"
+        android:padding="13dp"
+        android:text="9296"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/feedback_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#20D485"
+        android:text="提交"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myinfo.LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/login_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#20D485"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/register_back"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@null"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="注册"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/login_et_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_toolBar"
+        android:background="#FFF"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <EditText
+            android:id="@+id/register_mobilenum"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/my_phone_number"
+            android:hint="请输入正确的手机号码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/register_password"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/register_password"
+            android:hint="6-16位登录密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/register_comfirm_password"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/register_pass_cont"
+            android:hint="确认登录密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_et_ll"
+        android:background="#20D485"
+        android:text="提交注册"
+        android:textColor="#FFF"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/login_bottom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/register_btn"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="温馨提示："
+            android:textColor="#969696"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="请输入正确的手机号码，以确保预定成功后可接收到客服短信和点评奖金的发放通知"
+            android:textColor="#969696"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

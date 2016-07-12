@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xu.hasee.livewhere.myinfo.FeedbackActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/about_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#20D485"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/about_back"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@null"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="关于我们"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_below="@id/about_toolBar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="软件版本  3.4.0"
+            />
+        <TextView
+            android:id="@+id/about_weburl"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="手机网站 :  m.zhuna.cn"
+            />
+        <TextView
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新浪微博 ：@住哪网"
+            />
+        <TextView
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微信公众号 ： zhuna-cn"
+            />
+        <TextView
+            android:id="@+id/about_zhuna"
+            android:clickable="true"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关于住哪"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

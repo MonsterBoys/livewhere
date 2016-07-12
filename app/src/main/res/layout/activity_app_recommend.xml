@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.xu.hasee.livewhere.myinfo.AppRecommendActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/app_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#20D485"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/app_back"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@null"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="应用推荐"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+<ListView
+    android:id="@+id/app_lv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/app_toolBar"
+
+    ></ListView>
+</RelativeLayout>

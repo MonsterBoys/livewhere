@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.xu.hasee.livewhere.myinfo.MoreActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/more_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#20D485"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/more_back"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@null"
+                android:src="@drawable/back"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="更多"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+<ListView
+    android:id="@+id/more_lv"
+    android:layout_below="@id/more_toolBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    ></ListView>
+
+</RelativeLayout>

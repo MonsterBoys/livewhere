@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xu.hasee.livewhere">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/application_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".home.ChinaActivity" />
+        <activity android:name=".home.AbstractActivity" />
+        <activity
+            android:name=".home.SearchHotelActivity"
+            android:launchMode="singleTop"
+
+            />
+        <activity
+            android:name=".home.hotel_detile.HoltelDetileActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".home.hotel_detile.hotel_info.HotelInfoActivity" />
+        <activity android:name=".myinfo.ForgetActivity" />
+        <activity android:name=".myinfo.LoginActivity" />
+        <activity android:name=".myinfo.RegisterActivity" />
+        <activity android:name=".myinfo.OrderActivity" />
+        <activity android:name=".myinfo.MoreActivity" />
+        <activity android:name=".home.hotel_detile.hotel_photo.HotelPhotoActivity" />
+        <activity android:name=".home.HotelCollectionActivity" />
+        <activity android:name=".home.FavorateHotelActivity" />
+        <activity android:name=".home.hotel_detile.hotel_order.HotelOrderActivity"></activity>
+        <activity android:name=".home.calltaxi.Taxi_Head_Activity"></activity>
+        <activity android:name=".home.calltaxi.TaxiActivity"></activity>
+        <activity android:name=".home.hotel_recommend.InformationRcommend_activitys"></activity>
+        <activity android:name=".home.hotel_recommend.RecommendFragment2_1_acitivitys"></activity>
+        <activity android:name=".home.hotel_recommend.TripRecommend_activitys"></activity>
+        <activity android:name=".myinfo.FeedbackActivity" />
+        <activity android:name=".myinfo.HelpCenterActivity" />
+        <activity android:name=".myinfo.AboutActivity" />
+        <activity android:name=".myinfo.SoftwareSetActivity" />
+        <activity android:name=".myinfo.PhoneSecretActivity" />
+        <activity android:name=".myinfo.AboutDetailActivity" />
+        <activity android:name=".myinfo.ZhunawebActivity" />
+        <activity android:name=".myinfo.AppRecommendActivity"></activity>
+        <activity android:name=".myinfo.MyCollectListActivity"></activity>
+        <activity android:name=".myinfo.CommentActivity"></activity>
+        <activity android:name=".myinfo.MyHotelActivity"></activity>
+        <activity android:name=".myinfo.MyBandCardActivity"></activity>
+        <activity android:name=".home.small_strategy.SmallStrategy" />
+        <activity android:name=".home.near_hotel.NearHotelActivity"></activity>
+        <activity android:name=".home.small_strategy.SmallStrategy2"></activity>
+        <activity android:name=".myinfo.PersonInfoActivity" />
+        <activity android:name=".home.timehotel.TimeHotel" />
+        <activity android:name=".home.timehotel.TimeHotelInfo"></activity>
+        <activity android:name=".myinfo.EditPersonInfoActivity"></activity>
+        <activity android:name=".home.hotel_detile.hotel_order.OrderDetileActivity"></activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        <activity android:name=".myinfo.MyOrderDetailActivity"></activity>
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <!--易信分享回调 -->
+        <activity
+            android:name=".yxapi.YXEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <!-- 支付宝分享回调 -->
+        <activity
+            android:name=".apshare.ShareEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"/>
+    </application>
+
+</manifest>

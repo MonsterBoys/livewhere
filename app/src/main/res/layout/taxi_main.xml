@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/near_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#20D485"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="滴滴打车"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/back" />
+    <TextView
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="刷新"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"/>
+
+    <ImageView
+        android:id="@+id/image_head"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:src="@drawable/u6"
+        android:layout_below="@+id/refresh"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/image_background"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_head"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:src="@drawable/zb"
+        android:layout_below="@+id/image_head"
+        android:layout_marginTop="60dp"
+        android:layout_toLeftOf="@+id/edit_start"
+        android:layout_marginLeft="25dp"/>
+    <EditText
+        android:id="@+id/edit_start"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:hint="请输入起点"
+        android:layout_below="@+id/image_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/public_bgc"/>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:src="@drawable/afe"
+        android:layout_below="@+id/edit_start"
+        android:layout_toLeftOf="@+id/edit_stop"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"/>
+
+    <EditText
+        android:id="@+id/edit_stop"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:hint="请输入终点"
+        android:layout_below="@+id/edit_start"
+        android:layout_centerHorizontal="true"
+       android:layout_marginTop="10dp"
+        android:background="@drawable/public_bgc"
+        />
+
+    <Button
+        android:id="@+id/call_car"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="叫出租车"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/edit_stop"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/taxi_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="预约出租车,去订车"
+        android:layout_below="@+id/call_car"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/call_car"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/an_"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/taxi_order"/>
+
+</RelativeLayout>

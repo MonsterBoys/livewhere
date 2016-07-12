@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/hotel_pic"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/hotel_name"
+        android:layout_toRightOf="@id/hotel_pic"
+        android:text="海友酒店(前门店)"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/comment_scores"
+        android:text="4.2"
+        android:textColor="#20D485"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:layout_below="@id/hotel_name"
+        android:layout_toRightOf="@id/hotel_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/fen"
+        android:text="分"
+        android:textColor="#20D485"
+        android:layout_toRightOf="@id/comment_scores"
+        android:layout_below="@id/hotel_name"
+        android:layout_marginTop="12dp"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/comment_counts"
+        android:text="83"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/hotel_name"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/fen"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="条评论"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/hotel_name"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/comment_counts"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/hotel_type"
+        android:text="经济型"
+        android:layout_toRightOf="@id/hotel_pic"
+        android:layout_below="@id/comment_counts"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+         android:id="@+id/esdname"
+        android:text="前门/大栅栏"
+        android:textSize="12sp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/hotel_pic"
+        android:layout_below="@id/hotel_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/price"
+        android:text="151"
+        android:textColor="#ff6600"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="46dp"
+        android:textSize="18sp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="起"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginRight="10sp"
+        android:textSize="10sp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

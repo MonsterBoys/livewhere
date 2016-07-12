@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".myinfo.AboutDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/about_detail_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#20D485"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/about_detail_back"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@null"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="关于住哪"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_detail_toolBar"
+        android:padding="16dp"
+        android:text="住哪网，国内领先在线酒店预订服务提供商，创立于2007年6月，总部位于北京市二环朝阳门附近。曾获得2010年度中国优秀预订网站、2010年度中国最佳旅游供应商和2011年度价格最具竞争力预订网站等荣誉称号，并率先通过了2011年“CNNIC可信网站”认证。"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_detail_toolBar"
+        android:padding="16dp"
+        android:text="住哪网一直致力于为用户提供国内酒店的预订服务、出行攻略以及发布用户评价的互动平台。凭借主站（www.zhuna.cn）、7*24小时免费预订热线（400-666-5511）、住哪网手机客户端、m.zhuna.cn以及住哪网桌面版等全方位预订平台，为用户提供便捷的酒店查询和预订服务；通过精准的地图搜索功能、国内出行攻略、用户真实点评和酒店真实图片展示等在线服务，使用户能够更加全面的制定出行方案；同时，住哪网推出“订酒店返现金”的模式，使预订酒店的用户能得到最大的优惠，降低出行成本。"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_detail_toolBar"
+        android:padding="16dp"
+        android:text="截止2012年12月，住哪网签约国内酒店已达39275家，覆盖全国700多个城市，收录的入住客人点评达704456条，客人实拍照片达1252064张。"
+        android:textSize="16sp" />
+</LinearLayout>

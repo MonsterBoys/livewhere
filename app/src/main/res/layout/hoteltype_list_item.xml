@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/list_item_pic"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:padding="10dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/room_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/list_item_pic"
+        android:padding="10dp"
+        android:text="标准双人房"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/plansname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/room_type"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/list_item_pic"
+        android:paddingLeft="10dp"
+        android:text="含双早" />
+
+    <TextView
+        android:id="@+id/area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/room_type"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/plansname"
+        android:text="30" />
+
+    <TextView
+        android:id="@+id/pingmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/room_type"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/area"
+        android:text="平米" />
+
+    <TextView
+        android:id="@+id/bed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plansname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/list_item_pic"
+        android:text="双床1.2米" />
+
+
+    <TextView
+        android:id="@+id/totalprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/room_type"
+        android:layout_marginRight="10dp"
+        android:text="246"
+        android:textColor="#FFB800"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/totalprice"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/room_type"
+        android:layout_marginRight="54dp"
+        android:gravity="center"
+        android:text="¥"
+        android:textColor="#FFB800" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/totalprice"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/linearlayout_border">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返"
+            android:textColor="#FFB800"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥"
+            android:textColor="#FFB800"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/jiangjin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textColor="#FFB800"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>

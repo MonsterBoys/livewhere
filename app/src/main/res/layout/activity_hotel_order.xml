@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_oeder_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.hotel_detile.hotel_order.HotelOrderActivity">
+
+    <TextView
+        android:id="@+id/order_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#20D485"
+        android:gravity="center"
+        android:text="订单填写"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/order_hotel_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="广州如家快捷酒店（三元里店)"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_hotel_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="5月18日" />
+
+    <TextView
+        android:id="@+id/tomarror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_hotel_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/today"
+        android:text="5月19日" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/order_hotel_name"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共" />
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:background="#FFC17A"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="晚" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_room_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/today"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/myinfo_bg_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/rooms_type"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:padding="13dp"
+            android:text="商务大床房"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/room_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/rooms_type"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:text="1间"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/rooms_type"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/right_tips" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_come"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_room_type"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/myinfo_bg_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/come_time_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:padding="13dp"
+            android:text="到店时间"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/come_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/come_time_tv"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:text="20:00之前"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/come_time_tv"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/right_tips" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_live"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_come"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/myinfo_bg_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/live_person"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="13dp"
+            android:text="入住人"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/select_person"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/live_person"
+            android:hint="请输入1个入住人"
+            android:background="@drawable/seach_frame"
+            android:paddingTop="15dp"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_live"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/myinfo_bg_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/phone_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="13dp"
+            android:text="手机号"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/phone_number_tv"
+            android:hint="请输入手机号 "
+            android:paddingTop="15dp"
+            android:background="@drawable/seach_frame"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/wenxintishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_phone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="温馨提示" />
+
+    <TextView
+        android:id="@+id/tips1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wenxintishi"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="1.房源紧张，请尽快提交订单，以免售空."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tips2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tips1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="2.成功预定后，您可于入住当日中午14点后入住."
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rooms_money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/mycolorgreen"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/submit_order"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFC17A"
+            android:gravity="center"
+            android:text="提交订单"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>

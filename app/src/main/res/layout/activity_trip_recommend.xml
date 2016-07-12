@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.hotel_recommend.TripRecommend_activitys">
+
+    <TextView
+        android:id="@+id/tv_trip"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#24d488"
+        android:gravity="center"
+        android:text="出行推荐"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_recommend_back"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:onClick="iv_recommend_back"
+        android:src="@drawable/back" />
+
+    <ListView
+        android:id="@+id/lv_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_trip"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:scrollbars="none" />
+</RelativeLayout>

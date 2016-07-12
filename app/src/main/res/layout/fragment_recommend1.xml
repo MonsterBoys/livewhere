@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#20D485"
+        android:paddingLeft="150dp"
+        android:paddingTop="18dp"
+        android:text="住宿攻略"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/picture1"
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/ctiyname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/picture1"
+                android:padding="10dp"
+                android:text="城市"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ctrip_dp_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ctiyname"
+                android:paddingLeft="10dp"
+                android:text=""
+                android:textColor="#f77a1a"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ctiyname"
+                android:layout_toRightOf="@id/ctrip_dp_num"
+                android:text="位客人来过"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/descption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ctrip_dp_num"
+                android:padding="10dp"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/descption"
+                android:layout_marginTop="5dp"
+                android:background="#c4adad" />
+
+            <ListView
+                android:id="@+id/lv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/view3"></ListView>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

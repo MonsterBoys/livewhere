@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xu.hasee.livewhere.home.ChinaActivity">
+
+    <TextView
+        android:id="@+id/china_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#20D485"
+        android:gravity="center"
+        android:text="国内酒店"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/location_tv"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/china_title"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/my_location"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_alignRight="@id/location_tv"
+        android:layout_below="@id/china_title"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/my_location" />
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/location_tv"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:text="日期"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/current_date"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColor="#20D485"
+        android:layout_below="@id/location_tv"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/date_tv"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="2016-05-18"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/hotel_name"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/current_date"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:hint="酒店位置/名称"
+        android:paddingLeft="10dp"
+        android:paddingTop="25dp" />
+
+    <ImageView
+        android:id="@+id/hotel_name_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/current_date"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/right_tips" />
+
+    <TextView
+        android:id="@+id/hotel_price"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/hotel_name"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        android:hint="同城酒店"
+        android:paddingLeft="10dp"
+        android:paddingTop="25dp" />
+
+    <ImageView
+        android:id="@+id/hotel_price_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/hotel_name"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/right_tips" />
+
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/hotel_price"
+        android:layout_marginTop="24dp"
+        android:background="#20D485"
+        android:text="开始查询"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/holtel_collections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_btn"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="32dp"
+        android:text="酒店收藏" />
+
+    <TextView
+        android:id="@+id/always_holtel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_btn"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="32dp"
+        android:text="常住酒店" />
+</RelativeLayout>

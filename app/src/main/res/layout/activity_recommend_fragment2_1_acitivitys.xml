@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xu.hasee.livewhere.home.hotel_recommend.RecommendFragment2_1_acitivitys">
+
+    <TextView
+        android:id="@+id/hotelname"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#20D485"
+        android:gravity="center"
+        android:paddingLeft="48dp"
+        android:paddingRight="48dp"
+        android:singleLine="true"
+        android:text="品牌"
+        android:textColor="#fdfdfd"
+        android:textSize="20sp" />
+
+  <ImageView
+        android:id="@+id/back"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:src="@drawable/back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/hotelname">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/pic"
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pic"
+                android:padding="10dp" />
+
+            <ListView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/content"></ListView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

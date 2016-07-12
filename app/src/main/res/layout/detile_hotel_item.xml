@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="#ffffff"
+    android:paddingLeft="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="270dp"
+        android:layout_height="120dp">
+
+        <TextView
+            android:id="@+id/detile_item_hotel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="广州莫泰168（白云机场店)"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/detile_comment_scores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detile_item_hotel_name"
+            android:text="4.1"
+            android:textColor="#20D485" />
+
+        <TextView
+            android:id="@+id/fen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/detile_comment_scores"
+            android:layout_below="@id/detile_item_hotel_name"
+            android:layout_toRightOf="@id/detile_comment_scores"
+            android:text="分"
+            android:textColor="#20D485"
+            android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/detile_comment_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detile_item_hotel_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/fen"
+        android:text="187"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detile_item_hotel_name"
+        android:layout_toRightOf="@id/detile_comment_count"
+        android:text="条评论"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/xingji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detile_comment_scores"
+        android:layout_marginTop="5dp"
+        android:text="经济型"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/open_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xingji"
+        android:layout_marginTop="5dp"
+        android:text="2009年开业"
+        android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/detile_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/detile_item_hotel_name"
+            android:src="@drawable/right_tips" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/rl_layout"
+        android:background="#EEEEEE" />
+
+    <RadioButton
+        android:id="@+id/hotel_collecte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/rl_layout"
+        android:button="@null"
+        android:drawableTop="@drawable/hotel_collection_selector"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="收藏"
+        android:textColor="@drawable/hotel_colloction_textcolor_selectoe"
+        android:textSize="12sp" />
+</RelativeLayout>

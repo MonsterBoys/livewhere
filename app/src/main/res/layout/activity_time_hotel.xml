@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xu.hasee.livewhere.home.timehotel.TimeHotel">
+
+    <TextView
+        android:id="@+id/timehotel_tips"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#20D485"
+        android:gravity="center"
+        android:text="广州"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:src="@drawable/back" />
+
+    <com.xu.hasee.livewhere.home.hotel_detile.hotel_photo.RefreshLayout
+        android:id="@+id/rf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/timehotel_tips">
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </com.xu.hasee.livewhere.home.hotel_detile.hotel_photo.RefreshLayout>
+
+</RelativeLayout>

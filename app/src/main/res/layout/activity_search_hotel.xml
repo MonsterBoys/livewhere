@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xu.hasee.livewhere.home.SearchHotelActivity">
+
+    <TextView
+        android:id="@+id/search_title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#20D485"
+        android:paddingLeft="150dp"
+        android:paddingTop="18dp"
+        android:text="广州"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/search_back"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/search_edt"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@id/search_title"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="酒店"
+        android:paddingTop="8dp"
+        android:background="@drawable/seach_frame"
+        android:paddingLeft="20dp" />
+
+    <ImageView
+        android:id="@+id/search_btn_abstract"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:padding="5dp"
+        android:clickable="true"
+        android:focusable="true"
+      android:layout_marginRight="24dp"
+        android:layout_marginTop="62dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/seach_left" />
+
+    <RadioGroup
+        android:id="@+id/rdg_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:layout_below="@id/search_title"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/all_hotel"
+            android:layout_width="0dp"
+            android:drawableBottom="@drawable/search_title_selector"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textColor="@drawable/search_textcolor_selector"
+            android:gravity="center"
+            android:text="全部酒店" />
+
+        <RadioButton
+            android:id="@+id/fast_hotel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@drawable/search_textcolor_selector"
+            android:drawableBottom="@drawable/search_title_selector"
+            android:gravity="center"
+            android:button="@null"
+            android:text="快捷酒店" />
+
+        <RadioButton
+            android:id="@+id/now_hotel"
+            android:layout_width="0dp"
+            android:textColor="@drawable/search_textcolor_selector"
+            android:gravity="center"
+            android:drawableBottom="@drawable/search_title_selector"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="今日特价" />
+
+
+    </RadioGroup>
+
+   <!-- <RadioGroup
+        android:id="@+id/rdg_select"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:layout_marginTop="1dp"
+        android:layout_alignParentBottom="true"
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="筛选"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="价格/星级"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="排序"
+            android:textSize="18sp" />
+
+    </RadioGroup>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rdg_title"></android.support.v4.view.ViewPager>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/cityname"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#20D485"
+        android:gravity="center"
+        android:text="好酒店"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@null"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:src="@drawable/back" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line"
+        android:layout_below="@id/cityname"
+        android:background="#dad5d5" />
+
+    <ListView
+        android:id="@+id/lvv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line"
+        android:layout_marginTop="1dp"></ListView>
+</RelativeLayout>

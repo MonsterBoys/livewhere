@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xu.hasee.livewhere.home.hotel_detile.HoltelDetileActivity">
+
+    <TextView
+        android:id="@+id/holtel_detile_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#20D485"
+        android:gravity="center"
+        android:text="酒店详情"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/detile_back"
+        android:layout_width="48dp"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/detile_call"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/phone" />
+
+    <ImageView
+        android:id="@+id/detile_share"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/title_right_image" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/holtel_detile_bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+               ></android.support.v4.view.ViewPager>
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:id="@+id/detile_location"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/vp"
+                android:background="#ffffff"
+                android:paddingLeft="45dp"
+                android:paddingRight="45dp"
+                android:paddingTop="20dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:focusableInTouchMode="true"
+                android:scrollHorizontally="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vp"
+                android:padding="5dp"
+                android:src="@drawable/location_footer_icon" />
+
+            <RelativeLayout
+                android:id="@+id/detile_rl"
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detile_location">
+
+                <include layout="@layout/detile_hotel_item"></include>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detile_rl">
+                <ListView
+                    android:id="@+id/detile_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

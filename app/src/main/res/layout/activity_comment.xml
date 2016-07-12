@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.xu.hasee.livewhere.myinfo.CommentActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/comment_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#20D485"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/comment_back"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@null"
+                android:src="@drawable/back"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的点评"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/comment_call"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/phone"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"/>
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/comment_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/comment_toolBar"
+        android:background="#FFF"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+
+        <ImageView
+            android:id="@+id/comment_error_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/comment_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comment_error_iv"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xu.hasee.livewhere.myinfo.MyOrderDetailActivity">
+    <TextView
+        android:id="@+id/order_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#20D485"
+        android:gravity="center"
+        android:text="订单详情"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/order_detile_back"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/order_title_bar"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/detile_hotel_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_title_bar"
+            android:layout_marginTop="10dp"
+            android:text="广州如家快捷酒店（三元里店)"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/fanxian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="可返现0元" />
+
+        <TextView
+            android:id="@+id/dizhi"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:text="地址:云区棠景街三元里大道" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/push_dash_line" />
+        <TextView
+            android:id="@+id/dingdanid"
+            android:text="订单ID:234325252"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/dingdanzhuangtai"
+            android:text="订单状态:新订单"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/yudingriqi"
+            android:text="预订日期:2016-05-21"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="订单金额:"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/jine"
+            android:text="¥189"
+            android:textColor="@color/mycoloryellow"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/zhifufangshi"
+            android:text="支付方式:到店付款"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/yudingfangxing"
+            android:text="预订房型:标准双人房 1间"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ruzhushijian"
+            android:text="入住时间:05月16日 1晚"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ruzhuren"
+            android:text="入住人:"
+            android:textColor="@color/mycoloryellow"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/lianxifangshi"
+            android:text="联系方式:"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

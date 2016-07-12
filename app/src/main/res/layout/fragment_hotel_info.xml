@@ -1,0 +1,104 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xu.hasee.livewhere.home.hotel_detile.hotel_info.HotelInfoFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/fuwusheshi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="服务设施"
+            android:textColor="#20D485"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/jichushshi"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fuwusheshi"
+            android:layout_marginLeft="10dp"
+            android:text="基础设施:" />
+
+        <TextView
+            android:id="@+id/base_tv"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fuwusheshi"
+            android:layout_toRightOf="@id/jichushshi" />
+
+        <TextView
+            android:id="@+id/jiudianfuwu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jichushshi"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="酒店服务:" />
+
+        <TextView
+            android:id="@+id/hotelservice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jichushshi"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/jiudianfuwu" />
+
+        <LinearLayout
+            android:id="@+id/ll_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hotelservice"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/jiudianjieshao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="酒店介绍:"
+                android:textColor="#20D485"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/contents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="111111111111" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/jiaotongxinxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_intro"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="交通信息"
+            android:textColor="#20D485"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/jiaotongxinxi">
+
+            <ListView
+                android:id="@+id/traffics_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

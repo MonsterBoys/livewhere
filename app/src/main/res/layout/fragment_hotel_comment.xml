@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xu.hasee.livewhere.home.hotel_detile.hotel_info.HotelCommentFragment">
+
+    <RadioGroup
+        android:id="@+id/comment_rdg"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/hotel_button_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="24dp"
+            android:textColor="#ffffff" />
+
+        <RadioButton
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/hotel_button_selector1"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="24dp"
+            android:text="12"
+            android:textColor="#ffffff" />
+
+        <RadioButton
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/hotel_button_selector2"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="24dp"
+            android:text="12"
+            android:textColor="#ffffff" />
+
+        <RadioButton
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/hotel_button_selector3"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="24dp"
+            android:text="12"
+            android:textColor="#ffffff" />
+
+        <RadioButton
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/hotel_button_selector4"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="24dp"
+            android:text="12"
+            android:textColor="#ffffff" />
+    </RadioGroup>
+
+
+    <View
+        android:layout_below="@id/comment_rdg"
+        android:id="@+id/ver_div"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:background="#9F79EE" />
+
+    <ExpandableListView
+        android:id="@+id/lvv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/comment_rdg"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+
+        android:divider="@null" >
+    </ExpandableListView>
+</RelativeLayout>

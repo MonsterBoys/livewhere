@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/edit_person_info_rl"
+    tools:context="com.xu.hasee.livewhere.myinfo.EditPersonInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#20D485"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/edit_person_info_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@null"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="编辑个人资料"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#fff"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/person_info_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:text="姓名"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edit_person_info_name"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/person_info_tv1"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/color_cursor"
+
+                android:textSize="16sp"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#fff"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/person_info_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:text="昵称"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edit_person_info_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/person_info_tv2"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="16sp"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sex_rl"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#fff"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/person_info_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:text="性别"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/edit_person_info_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/person_info_tv3"
+                android:background="@null"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/right_tips" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/birthday_rl"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#fff"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/person_info_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:text="生日"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/edit_person_info_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/person_info_tv4"
+                android:background="@null"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/right_tips" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#fff"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/person_info_tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:text="邮箱"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edit_person_info_email"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/person_info_tv5"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="16sp"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="*首次补全个人信息送5元红包!"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/edit_success"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="#20D485"
+        android:text="完成"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+</RelativeLayout>

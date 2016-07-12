@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phone.PhoneFragment">
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#24d488"
+        android:gravity="center"
+        android:text="客服电话"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_topline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_phone"
+        android:layout_marginTop="5dp"
+        android:background="#ede2e2" />
+
+    <RelativeLayout
+        android:id="@+id/rl_suggest"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_below="@id/tv_topline">
+
+        <TextView
+            android:id="@+id/tv_suggest1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="问题由我解决,建议由我聆听,"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_suggest2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_suggest1"
+            android:layout_below="@id/tv_suggest1"
+            android:layout_marginTop="5dp"
+            android:text="服务由你享受!"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/ib_phone"
+            android:layout_width="200dp"
+            android:layout_height="170dp"
+            android:layout_below="@id/tv_suggest2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/imagebutton_homephone_selector"
+            android:button="@null"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_bottomline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rl_suggest"
+        android:layout_marginTop="5dp"
+        android:background="#ede2e2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_bottomline">
+
+        <TextView
+            android:id="@+id/tv_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:text="温馨提示:" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_prompt"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="按1:酒店预订"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_prompt"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/tv_1"
+            android:text="按2:订单查询"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_1"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="按3:度假套餐"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_2"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/tv_1"
+            android:text="按4:团购咨询"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_3"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="按6:会员及返现"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_4"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/tv_1"
+            android:text="按7:投诉与建议"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_6"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="按0:人工服务"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

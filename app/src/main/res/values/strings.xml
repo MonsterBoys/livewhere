@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LiveWhere</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="toute_tips">这里为您提供“待出行”行程单，方便您实时查找出行信息</string>
+    <string name="load_error_tips"> 网路不给力，加载失败！请检查网络设置或重新加载！</string>
+    <string name="phone_tip1">问题由我解决，建议由我聆听，服务由您享受！</string>
+    <string name="no_message">暂时木有数据</string>
+    <string name="load_error_route"> 没有相关行程赶紧去预订酒店!</string>
+</resources>

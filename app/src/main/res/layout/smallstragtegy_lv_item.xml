@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/pic0"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="10dp"/>
+
+
+    <TextView
+        android:id="@+id/title0"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="50dp"
+        android:text="光棍节"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+</RelativeLayout>

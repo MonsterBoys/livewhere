@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/hotelname"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="昆明七彩云南温德姆至尊豪廷大酒店"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/hotelname"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="栖南亚风情第一城商圈内，品味气派奢华k c"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+</RelativeLayout>

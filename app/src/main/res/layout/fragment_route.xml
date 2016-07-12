@@ -1,0 +1,50 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".route.RouteFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/title_route"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#20D485"
+        android:gravity="center"
+        android:text="酒店行程"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/route_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/title_route"
+        android:src="@drawable/today_trip_miss" />
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/route_img"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/toute_tips"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tips"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="100dp"
+        android:background="#20D485"
+        android:gravity="center"
+        android:text="请登录"
+        android:id="@+id/button"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+</RelativeLayout>
+</ScrollView>

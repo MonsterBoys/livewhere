@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/subname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pic"
+        android:layout_alignLeft="@id/pic"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:text="来场艳遇之旅"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pic"
+        android:layout_alignLeft="@id/pic"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="50dp"
+        android:paddingLeft="40dp"
+        android:text="光棍节"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/pic153"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/hotelname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/pic153"
+        android:singleLine="true"
+        android:text="广州白云国际机场新机场宾馆"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/fen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hotelname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/pic153"
+        android:text="分数:"
+        android:textColor="#20D485"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/comment_scores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hotelname"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/fen"
+        android:text="分"
+        android:textColor="#20D485"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/comment_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hotelname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/comment_scores"
+        android:text="57"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hotelname"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/comment_count"
+        android:text="条评论"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/xingji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_count"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/pic153"
+        android:text="经济型"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xingji"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/pic153"
+        android:text="前门/大栅栏"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_qi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="52dp"
+        android:text="起"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:layout_toLeftOf="@id/tv_qi"
+        android:text="160"
+        android:textColor="#ff6600"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/totalprice"
+        android:layout_below="@id/room_type"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@id/price"
+        android:gravity="center"
+        android:text="¥"
+        android:textColor="#FFB800" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/price"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/linearlayout_border">
+
+        <TextView
+            android:id="@+id/unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="#FFB800"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小时起"
+            android:textColor="#FFB800"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</RelativeLayout>

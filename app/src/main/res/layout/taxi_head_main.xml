@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/taxi_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#20D485"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="滴滴打车"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+    <ImageView
+        android:id="@+id/go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/back" />
+    <TextView
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="刷新"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您的手机号是?"
+        android:textSize="25sp"
+        android:textColor="#fefd8b00"
+        android:layout_below="@+id/taxi_title"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="填写手机号,方便司机与您联系"
+        android:textSize="20dp"
+        android:textColor="#555"
+        android:layout_below="@+id/tv_1"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/et_number"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="电话号码"
+        android:layout_below="@+id/tv_1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="43dp"
+        android:background="@drawable/public_bgc"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="验证"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/tv_2"
+        android:layout_toRightOf="@+id/et_number"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="验证码"
+        android:layout_below="@+id/et_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/public_bgc"/>
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="开始"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/et_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>

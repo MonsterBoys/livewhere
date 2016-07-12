@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/rg">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="5dp"
+        android:layout_height="96dp"
+        android:layout_below="@id/descption"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:background="#09ed4a" />
+
+    <TextView
+        android:id="@+id/cbd_name"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/descption"
+        android:layout_margin="20dp"
+        android:layout_toRightOf="@id/view"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="金马碧鸡坊"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="180dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/view"
+        android:layout_margin="10dp"
+        android:background="#8b7b7b" />
+
+    <TextView
+        android:id="@+id/choosehere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/line"
+        android:gravity="center"
+        android:text="36"
+        android:textColor="#0bd96b"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/precent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/choosehere"
+        android:gravity="center"
+        android:text="%"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/precent"
+        android:gravity="center"
+        android:text="的客人选择这里"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/descption2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/precent"
+        android:padding="10dp"
+        android:text="昆明的标志性建筑物,文化底蕴丰富.周边有南屏步行街、酒吧街、百盛广场,非常适合休闲放松的年轻人.周边住宿条件成熟,小到招待所,大到星酒店,满足不同消费需求.少有的几家特色客栈是背包客和驴友的最爱,经常爆满.预定还需提前."
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/descption2"
+        android:background="#cfb2b2" />
+
+    <ImageView
+        android:id="@+id/picture11"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/view2"
+        android:layout_margin="10dp"
+        android:paddingTop="10dp" />
+
+
+</RelativeLayout>

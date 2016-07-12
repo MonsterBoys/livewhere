@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myinfo.LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/login_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#20D485"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/forget_back"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@null"
+                android:src="@drawable/back"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="重置密码"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/login_et_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_toolBar"
+        android:background="#FFF"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <EditText
+            android:id="@+id/forget_mobilenum"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/my_phone_number"
+            android:maxLength="11"
+            android:textSize="16sp"
+            android:hint="注册的手机号码" />
+
+        <EditText
+            android:id="@+id/forget_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/register_password"
+            android:textSize="16sp"
+            android:maxLength="16"
+            android:inputType="textPassword"
+            android:hint="6-16位登录密码" />
+
+        <EditText
+            android:id="@+id/forget_new_pwd"
+            android:maxLength="16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/register_pass_cont"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            android:hint="新密码" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/forget_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_et_ll"
+        android:background="#20D485"
+        android:text="确认重置"
+        android:textColor="#FFF"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/login_bottom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/forget_btn"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="温馨提示："
+            android:textColor="#969696"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="1.短信验证码有效时间5分钟,避免重复提交"
+            android:textColor="#969696"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="2.每天短信发送次数上限3次,请及时完成密码重置"
+            android:textColor="#969696"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="3.若收不到短信通知,请确认是否被屏蔽,或拨打客服电话处理"
+            android:textColor="#969696"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+

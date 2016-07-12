@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RadioButton
+            android:id="@+id/rrb1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="住宿攻略"
+            android:textColor="@drawable/recommend_rbcolor_selector"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rrb2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="好酒店"
+            android:textColor="@drawable/recommend_rbcolor_selector"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rrb3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="微发现"
+            android:textColor="@drawable/recommend_rbcolor_selector"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/ll"
+        android:layout_below="@id/rg"
+        android:background="#bab5b5" />
+</RelativeLayout>
